@@ -1,0 +1,33 @@
+package lista002;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+
+		Scanner ler = new Scanner(System.in);
+
+		int idade;
+		
+		System.out.print("Informe a idade: ");
+		idade = ler.nextInt();
+		
+		if ((idade < 10) || (idade > 25)) {
+			System.out.printf("A idade informada não faz parte de nenhuma categoria.");
+		}
+		else if (idade <= 14) {
+			System.out.printf("A idade é %d anos e faz parte da categoria infantil.", idade);
+		}
+		else if (idade <= 17) {
+			System.out.printf("A idade é %d anos e faz parte da categoria juvenil.", idade);
+		}
+		else if (idade <= 25) {
+			System.out.printf("A idade é %d anos e faz parte da categoria adulto.", idade);
+		}
+		
+		ler.close();
+		
+	}
+
+}

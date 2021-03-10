@@ -1,0 +1,24 @@
+package lista001;
+
+public class Preguica extends Animal {
+
+	// Construtor
+
+	public Preguica(String nome, int idade) {
+		super(nome, idade);
+	}
+
+	// Métodos
+
+	@Override
+	public String emitirSom() {
+		String som = "som da preguiça";
+		return som;
+	}
+
+	@Override
+	public String acao() {
+		return "sobe em árvore";
+	}
+
+}

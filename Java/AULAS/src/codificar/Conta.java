@@ -1,13 +1,13 @@
-package CLASSES;
+package codificar;
 
-public class ContaEd {
+public class Conta {
 	
 
 	protected int numero;
 	public String cpf;
 	protected double saldo;
 	protected boolean ativa;
-	public ContaEd(int numero, String cpf) {
+	public Conta(int numero, String cpf) {
 		
 	}
 		
@@ -19,16 +19,16 @@ public class ContaEd {
 		
 	}
 		
-		public ContaEd() {
+		public Conta() {
 			
 		}
 	//CONSTRUTOR - SOBRECARGA	
-		public ContaEd(int numero) {
+		public Conta(int numero) {
 			
 			this.numero = numero;
 		}
 		
-		public ContaEd(int numero, String cpf, boolean ativa) {
+		public Conta(int numero, String cpf, boolean ativa) {
 
 			this.numero = numero;
 			this.cpf = cpf;
@@ -79,9 +79,3 @@ public class ContaEd {
 
 		
 }
-	
-		
-//public void setSaldo(double saldo) {
-//this.saldo = saldo;
-//}	
-	
